@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:padding="6dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:background="?android:selectableItemBackground">
+
+    <ImageView
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:scaleType="centerCrop"
+        android:id="@+id/product_image"
+        android:src="@drawable/sample_0"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Product Name"
+        android:id="@+id/product_name"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/product_image"
+        android:layout_toEndOf="@+id/product_image"
+        android:paddingTop="0dp"
+        android:paddingLeft="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="less than 50 character description"
+        android:id="@+id/product_short_descr"
+        android:paddingTop="2dp"
+        android:layout_toLeftOf="@+id/product_price"
+        android:layout_toRightOf="@+id/product_image"
+        android:layout_below="@+id/product_name"
+        android:paddingRight="12dp"
+        android:paddingLeft="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="$9.95"
+        android:id="@+id/product_price"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
